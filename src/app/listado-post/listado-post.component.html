@@ -1,0 +1,4 @@
+<div class="container">
+<app-post (onDelete)="deletePost($event)" *ngFor= "let item of dataApi ;trackBy: trackByFn" [post]="item"></app-post>
+<!-- {{ dataApi | json }} -->
+</div>
